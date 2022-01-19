@@ -42,7 +42,7 @@ function isPrimeNumber(number) {
    if (number <= 1) {
       return false;
    }
-   for (let i = 2; i < number; i++){
+   for (let i = 2; i < number/2; i++){
       if (number % i === 0) {
          return false;
       }
@@ -56,4 +56,15 @@ function squareRectangle(length, width) {
 
 function squareParalelipiped(length, width, heigth) {
    return 2 * (length * width + length * heigth + width * heigth);
+}
+
+
+
+function triangle(a,b,c) {
+   // if (a + b > c && a + c > b && b + c > a) {
+   //    return true;
+   // } else {
+   //    return false;
+   // }
+   return (a + b > c && a + c > b && b + c > a);
 }
